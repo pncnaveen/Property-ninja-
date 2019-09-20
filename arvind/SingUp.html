@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign Up Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Registration:</h2>
+  <form class="form-horizontal" action="/action_page_sing_up.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" required="required" name="name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="age">Age:</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="age" placeholder="Enter Age" required="required" name="age">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="occupation">Occupation:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="occupation" placeholder="Enter Occupation" required="required" name="occupation">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="income">Income:</label>
+      <div class="col-sm-10"><label>
+        <input type="radio" id="income" value="income_1" name="income">Below $1000</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="income"></label>
+      <div class="col-sm-10"><label>
+        <input type="radio" id="income" value="income_2" name="income">$1000 - $1500</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="income"></label>
+      <div class="col-sm-10"><label>
+        <input type="radio" id="income" value="income_3" name="income">$10,000 above</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="gender">Gender:</label>
+      <div class="col-sm-10"><label>
+        <input type="radio" id="gender" value="gender_m" name="gender">Male</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="gender"></label>
+      <div class="col-sm-10"><label>
+        <input type="radio" id="gender" value="gender_f" name="gender">Female</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="martial">Martial_Status:</label>
+      <div class="col-sm-10"><label>
+        <input type="radio" id="martial" value="martial_single" name="martial_status">Single</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="martial"></label>
+      <div class="col-sm-10"><label>
+        <input type="radio" id="martial" value="martial_divorced" name="martial_status">Married</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" required="required" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="confirm_pwd">Confirm Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="confirm_pwd" placeholder="Enter Password again" required="required" name="confirm_pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script src="sign.js"></script>
+</body>
+</html>
