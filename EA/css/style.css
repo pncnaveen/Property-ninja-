@@ -2023,3 +2023,8 @@ footer .credits {
     font-size: 1.3rem;
   }
 }
+.card-container
+{
+	padding : 200px;
+margin : 40 auto;
+}
