@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="EA/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
   
 
@@ -24,6 +25,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+<style>
+  .nav-link{
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+  }
+  h2, .color-c{
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+  }
+</style>
 <body>
 <nav class="navbar navbar-trans navbar-expand-lg bg-secondary navbar-drak fixed-top">
     <div class="container">
@@ -34,7 +45,7 @@
         <span></span>
       </button>
       <img src="prop_ninja_logo.png" alt="Logo" style="width:80px; padding: 20px">
-      <a class="navbar-brand text-brand" href="index.html"><span class="color-c">PropertyNinja</span></a>
+      <a class="navbar-brand text-brand" href="index.html"><span class="color-c">Property Ninja</span></a>
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
@@ -48,7 +59,7 @@
             <a class="nav-link active" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Login.html">login</a>
+            <a class="nav-link" href="Login.html">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="SignUp.html">SignUp</a>
@@ -64,7 +75,8 @@
     </div>
   </nav>
 <div class="container" style="padding: 150px">
-  <h2>Registration:</h2>
+  <h2>Registration Details</h2>
+  <br>
   <form class="form-horizontal" action="/action_page_sing_up.php">
     <div class="form-group">
       <label class="control-label col-sm-2" for="name">Name:</label>
@@ -121,7 +133,7 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-sm-2" for="martial">Martial_Status:</label>
+      <label class="control-label col-sm-2" for="martial">Marital_Status:</label>
       <div class="col-sm-10"><label>
         <input type="radio" id="martial" value="martial_single" name="martial_status">Single</label>
       </div>
@@ -129,31 +141,31 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="martial"></label>
       <div class="col-sm-10"><label>
-        <input type="radio" id="martial" value="martial_divorced" name="martial_status">Married</label>
+        <input type="radio" id="marital" value="marital_divorced" name="martial_status">Married</label>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Password:</label>
       <div class="col-sm-10">          
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" required="required" name="pwd">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter Password" required="required" name="pwd">
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="confirm_pwd">Confirm Password:</label>
       <div class="col-sm-10">          
-        <input type="password" class="form-control" id="confirm_pwd" placeholder="Enter Password again" required="required" name="confirm_pwd">
+        <input type="password" class="form-control" id="confirm_pwd" placeholder="Enter Password Again" required="required" name="confirm_pwd">
       </div>
     </div>
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
         <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
+          <label><input type="checkbox" name="remember">Remember Me</label>
         </div>
       </div>
     </div>
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </form>
